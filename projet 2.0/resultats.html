@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats - Gestion des Notes</title>
+    <link rel="stylesheet" href="résultats.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="intro-box">
+                <h1>Tableau des Résultats</h1>
+                <p>Liste récapitulative des performances académiques.</p>
+            </div>
+        </header>
+
+        <section class="table-container">
+            <table id="tableEtudiants">
+                <thead>
+                    <tr>
+                        <th>Nom de l'Étudiant</th>
+                        <th>Moyenne</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="corpsTableau">
+                    </tbody>
+            </table>
+            <div id="messageVide" style="display:none; text-align:center; padding:20px;">
+                Aucune donnée enregistrée pour le moment.
+            </div>
+        </section>
+    </main>
+<script src="resultat.js"></script>
+</body>
+</html>

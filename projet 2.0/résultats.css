@@ -1,0 +1,144 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("https://images.unsplash.com/photo-1455390582262-044cdead277a");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(10px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+/* Zone titre bien visible */
+.header {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+    /* rend le texte lisible */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Titre principal */
+.header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Sous-titre */
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+.table-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 900px;
+    overflow-x: auto;
+    /* Pour le mobile */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00AEEF;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styles pour le statut */
+.badge-admis {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.badge-ajourne {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.btn-delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+header p {
+
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+
+}

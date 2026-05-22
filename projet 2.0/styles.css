@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', arial, sans-serif;
+    background-image: linear-gradient(rgba(244, 247, 249, 0.7), rgba(244, 247, 249, 0.7)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main,
+header,
+footer {
+
+
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+header h1 {
+
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+h2 {
+    color: #0056b3;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+nav a:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background: #ddd;
+    margin: 20px 0;
+}

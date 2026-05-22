@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saisie des notes - Gestionnaire</title>
+    <link rel="stylesheet" href="saisie.css">
+</head>
+<body>
+   <main>
+    <header>
+        <div class="inttro-box">
+        <h1>Saisie des résultats</h1>
+        <p>Enrégistrer les performances des étudiants en quelques secondes.</p>
+        </div>
+    </header>
+    <section class="form-container">
+        <h2>Nouveau relevé</h2>
+        <form id="formNote">
+            <div class="input-group">
+                <label for="nom">Nom  et prénom de l'étudiant</label>
+                <input type="text" id="nom" placeholder="Ex: Manjiro SANO " required>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="note1">Note de contrôle 1</label>
+                    <input type="number" id="note1" min="0" max="20" step="0.25" required>
+                </div>
+                <div class="input-group">
+                    <label for="note2">Note de contrôle 2</label>
+                    <input type="number" id="note2" min="0"
+                    max="20" step="0.25" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Calculer et Enrégistrer</button>
+        </form>
+    </section>
+    <section id="resultatImmediat" class="result-display" style="display: none;">
+        <h3>Résultat pour <span id="resNom"></span> :</h3>
+        <p>moyenne : <strong id="resMoyenne"></strong>/ 20</p>
+        <p>statut : <span id="resEtat"></span></p>
+    </section>
+   </main>
+   <footer>
+    <nav>
+   <a href="resultats.html">Accéder au résultats</a>
+   </nav> 
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
